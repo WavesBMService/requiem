@@ -26,6 +26,7 @@
 		3B23EB2D202B936D001DC3A8 /* Requiem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Requiem; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B23EB30202B936D001DC3A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3B23EB37202B9544001DC3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5EE9FE202BA0C200EEC5EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		3B23EB24202B936D001DC3A8 = {
 			isa = PBXGroup;
 			children = (
+				3B5EE9FE202BA0C200EEC5EF /* README.md */,
 				3B23EB2F202B936D001DC3A8 /* Requiem */,
 				3B23EB2E202B936D001DC3A8 /* Products */,
 			);
