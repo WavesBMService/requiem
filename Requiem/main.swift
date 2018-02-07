@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+let notification = NSUserNotification()
+notification.title = "Test"
+notification.subtitle = "This is a test."
+notification.deliveryDate = Date(timeIntervalSinceNow: 2)
+
+NSUserNotificationCenter.default.scheduleNotification(notification)
+
+print(NSUserNotificationCenter.default.scheduledNotifications)
+print("\(notification.deliveryDate)")
+print("\(notification.actualDeliveryDate)")
+print(notification.isPresented)
+
+
 
