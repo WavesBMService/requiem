@@ -8,17 +8,18 @@
 
 import Foundation
 
+let arguments = CommandLine.arguments
+
 let notification = NSUserNotification()
-notification.title = "Test"
-notification.subtitle = "This is a test."
+
+let title = arguments[1].components(separatedBy: "=")[1]
+notification.title = title
+
+let subtitle = arguments[2].components(separatedBy: "=")[1]
+notification.subtitle = subtitle
 notification.deliveryDate = Date(timeIntervalSinceNow: 2)
 
 NSUserNotificationCenter.default.scheduleNotification(notification)
 
-print(NSUserNotificationCenter.default.scheduledNotifications)
-print("\(notification.deliveryDate)")
-print("\(notification.actualDeliveryDate)")
-print(notification.isPresented)
-
-
-
+// Without this, no notification will be triggered 🤷🏻‍♂️
+let _ = NSUserNotificationCenter.default.scheduledNotifications
